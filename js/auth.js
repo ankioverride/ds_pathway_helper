@@ -22,12 +22,12 @@
    ============================================================ */
 
 const FIREBASE_CONFIG = {
-  apiKey:            "YOUR_API_KEY",
-  authDomain:        "YOUR_PROJECT.firebaseapp.com",
-  projectId:         "YOUR_PROJECT_ID",
-  storageBucket:     "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId:             "YOUR_APP_ID"
+  apiKey:            "AIzaSyAWE1UZJl7_z0HB_RiIfMf-2ekkKelccms",
+  authDomain:        "dsai-pathway.firebaseapp.com",
+  projectId:         "dsai-pathway",
+  storageBucket:     "dsai-pathway.firebasestorage.app",
+  messagingSenderId: "976005189839",
+  appId:             "1:976005189839:web:b652929a1b455d1fb1e7ba"
 };
 
 /* ------------------------------------------------------------------
@@ -49,7 +49,7 @@ async function initFirebase() {
 
   try {
     const { initializeApp }   = await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js');
-    const { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged }
+    const { getAuth, GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult, signOut, onAuthStateChanged }
       = await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js');
     const { getFirestore, doc, getDoc, setDoc }
       = await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js');
@@ -60,7 +60,7 @@ async function initFirebase() {
     _firebaseReady = true;
 
     // Expose helpers on the module-level object for app.js to call
-    window._fb = { _auth, _db, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged, doc, getDoc, setDoc };
+    window._fb = { _auth, _db, GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult, signOut, onAuthStateChanged, doc, getDoc, setDoc };
     return true;
   } catch (e) {
     console.warn('Firebase init failed:', e);
@@ -70,8 +70,31 @@ async function initFirebase() {
 
 async function signInWithGoogle() {
   if (!_firebaseReady || !window._fb) return null;
-  const { _auth, GoogleAuthProvider, signInWithPopup } = window._fb;
-  return signInWithPopup(_auth, new GoogleAuthProvider());
+  const { _auth, GoogleAuthProvider, signInWithPopup, signInWithRedirect } = window._fb;
+  try {
+    return await signInWithPopup(_auth, new GoogleAuthProvider());
+  } catch (e) {
+    // Popup blocked, internal error, or cross-origin restrictions — fall back to redirect
+    if (e.code === 'auth/popup-blocked' || e.code === 'auth/popup-closed-by-user') {
+      throw e; // Let caller handle user-cancelled
+    }
+    if (e.code === 'auth/internal-error' || e.code === 'auth/operation-not-supported-in-this-environment' || e.code === 'auth/unauthorized-domain') {
+      await signInWithRedirect(_auth, new GoogleAuthProvider());
+      return null; // Page will redirect; result handled by checkRedirectResult on next load
+    }
+    throw e;
+  }
+}
+
+async function checkRedirectResult() {
+  if (!_firebaseReady || !window._fb) return null;
+  try {
+    const { _auth, getRedirectResult } = window._fb;
+    return await getRedirectResult(_auth);
+  } catch (e) {
+    console.warn('Redirect result error:', e);
+    return null;
+  }
 }
 
 async function signOutUser() {
@@ -106,4 +129,9 @@ function onAuthChange(callback) {
   if (!_firebaseReady || !window._fb) return;
   const { _auth, onAuthStateChanged } = window._fb;
   onAuthStateChanged(_auth, callback);
+}
+
+/** Returns true only if Firebase was successfully initialized */
+function firebaseReady() {
+  return _firebaseReady;
 }

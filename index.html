@@ -8,16 +8,36 @@
   <title>Data Science & AI Engineer Pathway — 6-Month Roadmap</title>
   <meta name="description" content="A complete, structured 6-month roadmap to become a Data Science and AI Engineer. Includes expandable topics, curated resources, and progress tracking.">
   <meta name="keywords" content="data science roadmap, AI engineer path, machine learning curriculum, learn ML, deep learning path, MLOps">
-  <meta name="author" content="Your Name">
-  <link rel="canonical" href="https://yourdomain.com/">
+  <meta name="author" content="Ankit">
+  <link rel="canonical" href="https://ds-pathway-helper.vercel.app/">
 
   <!-- Open Graph / Social sharing -->
   <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://yourdomain.com/">
+  <meta property="og:url"         content="https://ds-pathway-helper.vercel.app/">
   <meta property="og:title"       content="Data Science & AI Engineer Pathway">
   <meta property="og:description" content="A complete 6-month roadmap to become a Data Science and AI Engineer — with progress tracking.">
-  <meta property="og:image"       content="https://yourdomain.com/og-image.png">
+  <meta property="og:image"       content="https://ds-pathway-helper.vercel.app/og-image.png">
   <meta name="twitter:card"       content="summary_large_image">
+
+  <!-- Security headers (supplement with server-side headers when hosting) -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src  'self' https://www.gstatic.com;
+    style-src   'self' https://fonts.googleapis.com 'unsafe-inline';
+    font-src    'self' https://fonts.gstatic.com;
+    img-src     'self' https://lh3.googleusercontent.com https://*.googleusercontent.com data:;
+    connect-src 'self' https://*.googleapis.com https://*.firebaseio.com https://*.firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com;
+    frame-src   https://dsai-pathway.firebaseapp.com https://accounts.google.com https://ds-pathway-helper.vercel.app;
+    frame-ancestors 'none';
+    base-uri    'self';
+    form-action 'none';
+  ">
+
+  <!-- Favicon (inline SVG as data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2305080f'/><text x='4' y='24' font-size='22'>🧠</text></svg>">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +51,7 @@
 
 <div class="bg-mesh"></div>
 
-<!-- ── Header ─────────────────────────────────────────────────── -->
+<!-- Header -->
 <header>
   <div class="header-inner">
     <div>
@@ -53,14 +73,14 @@
         <div class="stat-key">Phases</div>
       </div>
       <div class="stat-item">
-        <div class="stat-val">25<span>+</span></div>
+        <div class="stat-val" id="stat-resources">25<span>+</span></div>
         <div class="stat-key">Resources</div>
       </div>
     </div>
   </div>
 </header>
 
-<!-- ── Sticky progress + auth bar ─────────────────────────────── -->
+<!-- Sticky progress + auth bar -->
 <div class="sticky-prog" id="stickyProg">
   <div class="sticky-prog-inner">
     <div class="sp-left">
@@ -71,6 +91,10 @@
       <div class="sp-bar"><div id="prog-fill" class="sp-fill"></div></div>
     </div>
     <span id="prog-pct" class="sp-pct">0%</span>
+
+    <button id="btn-collapse-all" class="collapse-all-btn" title="Collapse all cards">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
 
     <div class="auth-divider"></div>
 
@@ -91,29 +115,117 @@
     <div id="auth-info" style="display:none" class="auth-info">
       <img id="auth-avatar" class="auth-avatar" src="" alt="">
       <span id="auth-name" class="auth-name"></span>
-      <span id="auth-cloud" class="auth-cloud synced">☁️ Synced</span>
+      <span id="auth-cloud" class="auth-cloud synced">☁ Synced</span>
       <button id="btn-signout" class="auth-signout-btn">Sign out</button>
     </div>
   </div>
 </div>
 
-<!-- ── Timeline ────────────────────────────────────────────────── -->
+<!-- Timeline -->
 <main id="timeline"></main>
 
-<!-- ── Footer ─────────────────────────────────────────────────── -->
+<!-- Footer -->
 <footer>
   <div class="finish-card" id="finishCard">
     <div class="finish-icon">🚀</div>
     <div class="finish-title">You're an <em>AI Engineer</em></div>
     <p class="finish-desc">Six months of focused effort and you'll be shipping real ML systems. Remember: a deployed, imperfect project beats a perfect, unfinished one. Build in public.</p>
   </div>
+
+  <!-- Site footer bar -->
+  <div class="site-footer">
+    <div class="site-footer-inner">
+      <div class="site-footer-left">
+        <span class="footer-logo">🧠 DS&AI Pathway</span>
+        <span class="footer-sep">·</span>
+        <span class="footer-tagline">6-month accelerated track</span>
+      </div>
+      <div class="site-footer-right">
+        <button class="footer-link" id="btn-about">About</button>
+        <span class="footer-sep">·</span>
+        <span class="footer-credit">Made with <span class="footer-heart">♥</span> by <strong>Ankit</strong> &amp; <span class="footer-claude">Claude</span></span>
+      </div>
+    </div>
+  </div>
 </footer>
 
-<!-- ── Scripts (order matters) ─────────────────────────────────── -->
-<script src="data/curriculum.js"></script>   <!-- CURRICULUM array  -->
-<script src="js/progress.js"></script>        <!-- loadProgress, saveProgress, helpers -->
-<script src="js/auth.js"></script>            <!-- Firebase auth stubs -->
-<script src="js/app.js"></script>             <!-- Main app logic -->
+<!-- About Modal -->
+<div class="modal-overlay" id="aboutModal" role="dialog" aria-modal="true" aria-label="About">
+  <div class="modal">
+    <button class="modal-close" id="btn-modal-close" aria-label="Close">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+
+    <div class="modal-eyebrow"><span class="badge-dot"></span> About this project</div>
+    <h2 class="modal-title">DS &amp; AI Engineering<br><em>Pathway</em></h2>
+    <p class="modal-lead">A free, structured 6-month roadmap for Python developers who want to go from zero ML knowledge to shipping real AI systems in production.</p>
+
+    <div class="modal-features">
+      <div class="modal-feature">
+        <div class="modal-feat-icon">🗺️</div>
+        <div>
+          <div class="modal-feat-title">Structured Phases</div>
+          <div class="modal-feat-desc">6 phases, 16 topic cards — from Python refresher through MLOps and cloud deployment.</div>
+        </div>
+      </div>
+      <div class="modal-feature">
+        <div class="modal-feat-icon">📚</div>
+        <div>
+          <div class="modal-feat-title">150+ Curated Resources</div>
+          <div class="modal-feat-desc">Handpicked videos, books, courses and docs. Filter by type — no filler.</div>
+        </div>
+      </div>
+      <div class="modal-feature">
+        <div class="modal-feat-icon">✅</div>
+        <div>
+          <div class="modal-feat-title">Progress Tracking</div>
+          <div class="modal-feat-desc">Check off topics as you go. Saves automatically — no account required to start.</div>
+        </div>
+      </div>
+      <div class="modal-feature">
+        <div class="modal-feat-icon">☁️</div>
+        <div>
+          <div class="modal-feat-title">Cross-device Cloud Sync</div>
+          <div class="modal-feat-desc">Sign in with Google to sync progress across devices via Firebase — free tier.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <div class="modal-section-label">How to enable cloud sync</div>
+      <ol class="modal-steps">
+        <li>Go to <strong>console.firebase.google.com</strong> and create a free project (Spark plan)</li>
+        <li>Enable <strong>Google Sign-In</strong> under Authentication → Sign-in method → Google</li>
+        <li>Create a <strong>Firestore Database</strong> → Start in test mode</li>
+        <li>Open <code>js/auth.js</code> and fill in your config under <code>FIREBASE_CONFIG</code></li>
+        <li>Reload the page — the "Sign in to sync" button will now work</li>
+      </ol>
+    </div>
+
+    <div class="modal-divider"></div>
+
+    <div class="modal-credit-block">
+      <div class="modal-credit-row">
+        <div class="modal-avatar">A</div>
+        <div class="modal-creator-info">
+          <div class="modal-creator-name">Ankit</div>
+          <div class="modal-creator-role">Built to structure his own DS/AI learning journey</div>
+        </div>
+      </div>
+      <div class="modal-built-with">
+        <span>Designed &amp; built with</span>
+        <span class="modal-claude-badge">Claude by Anthropic</span>
+      </div>
+      <p class="modal-oss-note">Fork it, adapt it, share it. The best roadmap is the one you actually follow.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts (order matters) -->
+<script src="data/curriculum.js"></script>
+<script src="js/progress.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 </html>

@@ -36,6 +36,11 @@ const CURRICULUM = [
           { icon: "🎥", name: "Corey Schafer — Python Beginner Series", type: "YouTube Series", url: "https://www.youtube.com/playlist?list=PL-osiE80TeTskrapNbzXhwoFUiLCjGgY7" },
           { icon: "🧑‍💻", name: "Exercism — Python Track", type: "Practice Problems", url: "https://exercism.org/tracks/python" },
           { icon: "🧑‍💻", name: "Python Cheatsheet (comprehensive)", type: "Reference", url: "https://www.pythoncheatsheet.org/" },
+          { icon: "📖", name: "Automate the Boring Stuff with Python (Free)", type: "Free Book", url: "https://automatetheboringstuff.com/" },
+          { icon: "🧑‍💻", name: "HackerRank Python Challenges", type: "Practice Problems", url: "https://www.hackerrank.com/domains/python" },
+          { icon: "🎥", name: "Tech With Tim — Python Full Course", type: "YouTube Course", url: "https://www.youtube.com/watch?v=sxTmJE4k0ho" },
+          { icon: "🧑‍💻", name: "W3Schools Python — Quick Reference", type: "Reference", url: "https://www.w3schools.com/python/" },
+          { icon: "📖", name: "Think Python — How to Think Like a CS (Free)", type: "Free Book", url: "https://greenteapress.com/wp/think-python-3rd-edition/" },
         ]
       },
       {
@@ -64,6 +69,11 @@ const CURRICULUM = [
           { icon: "🎥", name: "Corey Schafer — OOP in Python", type: "YouTube Series", url: "https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc" },
           { icon: "🧑‍💻", name: "Python Packaging User Guide", type: "Documentation", url: "https://packaging.python.org/en/latest/tutorials/packaging-projects/" },
           { icon: "📖", name: "Fluent Python — Ramalho (advanced)", type: "Book", url: "https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/" },
+          { icon: "🎥", name: "ArjanCodes — Software Design in Python", type: "YouTube Channel", url: "https://www.youtube.com/@ArjanCodes" },
+          { icon: "🧑‍💻", name: "testdriven.io — Python Testing & Design", type: "Tutorials", url: "https://testdriven.io/blog/topics/python/" },
+          { icon: "📖", name: "Python Testing with pytest — Brian Okken", type: "Book", url: "https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/" },
+          { icon: "📖", name: "Clean Code in Python — Mariano Anaya", type: "Book", url: "https://www.packtpub.com/product/clean-code-in-python-second-edition/9781800560215" },
+          { icon: "🧑‍💻", name: "MyPy — Static Type Checking Docs", type: "Documentation", url: "https://mypy.readthedocs.io/" },
         ]
       },
       {
@@ -90,7 +100,12 @@ const CURRICULUM = [
           { icon: "🧑‍💻", name: "Jupyter Notebook Official Docs", type: "Documentation", url: "https://jupyter-notebook.readthedocs.io/" },
           { icon: "📖", name: "NumPy — Absolute Beginners Guide", type: "Documentation", url: "https://numpy.org/doc/stable/user/absolute_beginners.html" },
           { icon: "🎥", name: "ArjanCodes — Python Performance Tips", type: "YouTube", url: "https://www.youtube.com/@ArjanCodes" },
-          { icon: "🧑‍💻", name: "High Performance Python (book)", type: "Book", url: "https://www.oreilly.com/library/view/high-performance-python/9781492055013/" },
+          { icon: "📖", name: "High Performance Python — Gorelick & Ozsvald", type: "Book", url: "https://www.oreilly.com/library/view/high-performance-python/9781492055013/" },
+          { icon: "🧑‍💻", name: "SciPy Lectures — Scientific Python Ecosystem", type: "Free Tutorial", url: "https://lectures.scientific-python.org/" },
+          { icon: "🧑‍💻", name: "Numba — JIT Compilation for Python", type: "Documentation", url: "https://numba.readthedocs.io/en/stable/" },
+          { icon: "🧑‍💻", name: "100 NumPy Exercises (with solutions)", type: "Practice", url: "https://github.com/rougier/numpy-100" },
+          { icon: "🎥", name: "SciPy Conference Talks (free)", type: "YouTube Playlist", url: "https://www.youtube.com/c/SciPyConference" },
+          { icon: "🧑‍💻", name: "NumPy Official Documentation", type: "Documentation", url: "https://numpy.org/doc/stable/" },
         ]
       }
     ]
@@ -115,9 +130,14 @@ const CURRICULUM = [
         ],
         resources: [
           { icon: "🎥", name: "3Blue1Brown: Essence of Linear Algebra", type: "YouTube Series", url: "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" },
+          { icon: "🎥", name: "3Blue1Brown: Essence of Calculus", type: "YouTube Series", url: "https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr" },
           { icon: "🎥", name: "StatQuest with Josh Starmer", type: "YouTube Channel", url: "https://www.youtube.com/@statquest" },
           { icon: "📖", name: "Mathematics for Machine Learning (free PDF)", type: "Textbook", url: "https://mml-book.github.io/" },
           { icon: "🧑‍💻", name: "Khan Academy — Calculus & Statistics", type: "Free Course", url: "https://www.khanacademy.org" },
+          { icon: "🎥", name: "MIT 18.06 Linear Algebra — Gilbert Strang (free)", type: "MIT OpenCourseWare", url: "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/" },
+          { icon: "🧑‍💻", name: "Seeing Theory — Visual Probability & Stats", type: "Interactive", url: "https://seeing-theory.brown.edu/" },
+          { icon: "📖", name: "The Elements of Statistical Learning (free PDF)", type: "Textbook", url: "https://hastie.su.domains/ElemStatLearn/" },
+          { icon: "🧑‍💻", name: "Brilliant.org — Math & Data Science", type: "Interactive Course", url: "https://brilliant.org/courses/math-for-ml/" },
         ]
       },
       {
@@ -136,6 +156,11 @@ const CURRICULUM = [
           { icon: "📖", name: "Mode SQL Tutorial", type: "Free Tutorial", url: "https://mode.com/sql-tutorial/" },
           { icon: "🧑‍💻", name: "LeetCode SQL 50", type: "Practice Problems", url: "https://leetcode.com/studyplan/top-sql-50/" },
           { icon: "🎥", name: "Alex the Analyst — SQL Full Course", type: "YouTube Series", url: "https://www.youtube.com/@AlexTheAnalyst" },
+          { icon: "🧑‍💻", name: "Select Star SQL — Free Interactive Book", type: "Interactive Book", url: "https://selectstarsql.com/" },
+          { icon: "🧑‍💻", name: "HackerRank SQL Challenges", type: "Practice Problems", url: "https://www.hackerrank.com/domains/sql" },
+          { icon: "📖", name: "PostgreSQL Official Tutorial", type: "Documentation", url: "https://www.postgresql.org/docs/current/tutorial.html" },
+          { icon: "🎥", name: "Socratica — SQL Tutorial Series", type: "YouTube Series", url: "https://www.youtube.com/playlist?list=PLi01XoE8jYojRqM4qGBF1U90Ee1Ecb5yx" },
+          { icon: "📖", name: "SQL for Data Analysis — Cathy Tanimura", type: "Book", url: "https://www.oreilly.com/library/view/sql-for-data/9781492088776/" },
         ]
       }
     ]
@@ -162,8 +187,13 @@ const CURRICULUM = [
         resources: [
           { icon: "📖", name: "Pandas Official Docs — User Guide", type: "Documentation", url: "https://pandas.pydata.org/docs/user_guide/" },
           { icon: "🧑‍💻", name: "Kaggle — Pandas Course (Free)", type: "Free Course", url: "https://www.kaggle.com/learn/pandas" },
-          { icon: "📖", name: "Python for Data Analysis — Wes McKinney", type: "Book", url: "https://wesmckinney.com/book/" },
+          { icon: "📖", name: "Python for Data Analysis — Wes McKinney (free)", type: "Book", url: "https://wesmckinney.com/book/" },
           { icon: "🎥", name: "Corey Schafer — Pandas Tutorial Series", type: "YouTube Series", url: "https://www.youtube.com/@coreyms" },
+          { icon: "🧑‍💻", name: "100 Pandas Puzzles (with solutions)", type: "Practice", url: "https://github.com/ajcr/100-pandas-puzzles" },
+          { icon: "🎥", name: "Kevin Markham — Pandas Best Practices", type: "YouTube", url: "https://www.youtube.com/c/dataschool" },
+          { icon: "📖", name: "Effective Pandas — Matt Harrison", type: "Book", url: "https://store.metasnake.com/effective-pandas-book" },
+          { icon: "🧑‍💻", name: "Polars User Guide — Modern Pandas Alternative", type: "Documentation", url: "https://docs.pola.rs/" },
+          { icon: "🧑‍💻", name: "NumPy Official Documentation", type: "Documentation", url: "https://numpy.org/doc/stable/" },
         ]
       },
       {
@@ -179,10 +209,15 @@ const CURRICULUM = [
           "Pair plots", "Missing value visualization", "Time series plots", "Storytelling with data"
         ],
         resources: [
-          { icon: "📖", name: "Fundamentals of Data Visualization", type: "Free Online Book", url: "https://clauswilke.com/dataviz/" },
+          { icon: "📖", name: "Fundamentals of Data Visualization (free)", type: "Free Online Book", url: "https://clauswilke.com/dataviz/" },
           { icon: "🧑‍💻", name: "Kaggle — Data Visualization Course", type: "Free Course", url: "https://www.kaggle.com/learn/data-visualization" },
           { icon: "🎥", name: "Python Seaborn & Plotly — Patrick Loeber", type: "YouTube", url: "https://www.youtube.com/@patloeber" },
           { icon: "🧑‍💻", name: "Plotly Docs — Python Chart Gallery", type: "Documentation", url: "https://plotly.com/python/" },
+          { icon: "📖", name: "Storytelling with Data — Cole Nussbaumer Knaflic", type: "Book", url: "https://www.storytellingwithdata.com/book" },
+          { icon: "🧑‍💻", name: "Matplotlib Gallery — Example Visualizations", type: "Reference", url: "https://matplotlib.org/stable/gallery/index.html" },
+          { icon: "🎥", name: "Data Professor — EDA in Python (YouTube)", type: "YouTube", url: "https://www.youtube.com/@DataProfessor" },
+          { icon: "🧑‍💻", name: "Seaborn Official Gallery & Examples", type: "Documentation", url: "https://seaborn.pydata.org/examples/index.html" },
+          { icon: "🧑‍💻", name: "ydata-profiling — Auto EDA Reports", type: "Library Docs", url: "https://docs.profiling.ydata.ai/" },
         ]
       }
     ]
@@ -211,6 +246,11 @@ const CURRICULUM = [
           { icon: "📖", name: "Hands-On Machine Learning (Géron) Ch.1–7", type: "Book", url: "https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/" },
           { icon: "🧑‍💻", name: "Kaggle — Intro to Machine Learning", type: "Free Course", url: "https://www.kaggle.com/learn/intro-to-machine-learning" },
           { icon: "📖", name: "Scikit-learn User Guide", type: "Documentation", url: "https://scikit-learn.org/stable/user_guide.html" },
+          { icon: "🎥", name: "Stanford CS229 — Machine Learning (free)", type: "University Course", url: "https://cs229.stanford.edu/" },
+          { icon: "🧑‍💻", name: "Andrew Ng — ML Specialization (free audit)", type: "Coursera Course", url: "https://www.coursera.org/specializations/machine-learning-introduction" },
+          { icon: "📖", name: "Elements of Statistical Learning (free PDF)", type: "Textbook", url: "https://hastie.su.domains/ElemStatLearn/" },
+          { icon: "🧑‍💻", name: "XGBoost Official Documentation", type: "Documentation", url: "https://xgboost.readthedocs.io/" },
+          { icon: "🎥", name: "fast.ai — Tabular Data & Tree Models", type: "Free Course", url: "https://course.fast.ai/" },
         ]
       },
       {
@@ -231,6 +271,11 @@ const CURRICULUM = [
           { icon: "🧑‍💻", name: "Optuna Quickstart Documentation", type: "Documentation", url: "https://optuna.readthedocs.io/en/stable/tutorial/" },
           { icon: "🧑‍💻", name: "Kaggle — Intermediate ML (Pipelines & CV)", type: "Free Course", url: "https://www.kaggle.com/learn/intermediate-machine-learning" },
           { icon: "📖", name: "Scikit-learn Model Evaluation Guide", type: "Documentation", url: "https://scikit-learn.org/stable/modules/model_evaluation.html" },
+          { icon: "🧑‍💻", name: "Yellowbrick — ML Visualization Library", type: "Library Docs", url: "https://www.scikit-yb.org/" },
+          { icon: "🧑‍💻", name: "SHAP — Model Explainability Library", type: "Documentation", url: "https://shap.readthedocs.io/" },
+          { icon: "🎥", name: "Abhishek Thakur — Hyperparameter Tuning", type: "YouTube", url: "https://www.youtube.com/@AbhishekThakurAbhi" },
+          { icon: "📖", name: "ML Mastery — Model Evaluation Tutorials", type: "Tutorials", url: "https://machinelearningmastery.com/category/model-evaluation/" },
+          { icon: "🧑‍💻", name: "Evidently AI — Model & Data Monitoring", type: "Documentation", url: "https://www.evidentlyai.com/" },
         ]
       },
       {
@@ -251,6 +296,11 @@ const CURRICULUM = [
           { icon: "📖", name: "Feature Engineering for Machine Learning", type: "Book", url: "https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/" },
           { icon: "🎥", name: "Abhishek Thakur — Approaching ML Problems", type: "YouTube", url: "https://www.youtube.com/@AbhishekThakurAbhi" },
           { icon: "🧑‍💻", name: "imbalanced-learn Library Docs", type: "Library Docs", url: "https://imbalanced-learn.org/stable/" },
+          { icon: "🧑‍💻", name: "Category Encoders Library", type: "Library Docs", url: "https://contrib.scikit-learn.org/category_encoders/" },
+          { icon: "🧑‍💻", name: "Featuretools — Automated Feature Engineering", type: "Library Docs", url: "https://www.featuretools.com/" },
+          { icon: "📖", name: "Approaching (Almost) Any ML Problem — A. Thakur (free)", type: "Free Book", url: "https://github.com/abhishekkrthakur/approachingalmost" },
+          { icon: "🧑‍💻", name: "UMAP Documentation & Examples", type: "Documentation", url: "https://umap-learn.readthedocs.io/" },
+          { icon: "🧑‍💻", name: "Kaggle Grandmaster Solution Writeups", type: "Blog Posts", url: "https://www.kaggle.com/discussions" },
         ]
       }
     ]
@@ -280,6 +330,11 @@ const CURRICULUM = [
           { icon: "🧑‍💻", name: "PyTorch Official Tutorials", type: "Documentation", url: "https://pytorch.org/tutorials/" },
           { icon: "🎥", name: "Andrej Karpathy — Neural Nets: Zero to Hero", type: "YouTube Series", url: "https://www.youtube.com/@AndrejKarpathy" },
           { icon: "📖", name: "Deep Learning with PyTorch (free book)", type: "Free Book", url: "https://pytorch.org/assets/deep-learning/Deep-Learning-with-PyTorch.pdf" },
+          { icon: "📖", name: "Deep Learning — Goodfellow et al. (free online)", type: "Free Textbook", url: "https://www.deeplearningbook.org/" },
+          { icon: "🎥", name: "Stanford CS231n — CNNs for Visual Recognition (free)", type: "University Course", url: "http://cs231n.stanford.edu/" },
+          { icon: "🧑‍💻", name: "Dive into Deep Learning — d2l.ai (free)", type: "Interactive Textbook", url: "https://d2l.ai/" },
+          { icon: "🧑‍💻", name: "PyTorch Lightning — Simplified Training", type: "Documentation", url: "https://lightning.ai/docs/pytorch/stable/" },
+          { icon: "🧑‍💻", name: "Weights & Biases — Free DL Courses", type: "Free Courses", url: "https://www.wandb.courses/" },
         ]
       },
       {
@@ -298,8 +353,13 @@ const CURRICULUM = [
         resources: [
           { icon: "📖", name: "The Illustrated Transformer — Jay Alammar", type: "Must-Read Blog", url: "https://jalammar.github.io/illustrated-transformer/" },
           { icon: "🧑‍💻", name: "HuggingFace NLP Course (Free)", type: "Free Course", url: "https://huggingface.co/learn/nlp-course/" },
-          { icon: "🎥", name: "Karpathy — Let's build GPT from scratch", type: "YouTube", url: "https://www.youtube.com/@AndrejKarpathy" },
+          { icon: "🎥", name: "Karpathy — Let's build GPT from scratch", type: "YouTube", url: "https://www.youtube.com/watch?v=kCc8FmEb1nY" },
           { icon: "📖", name: "Attention Is All You Need (original paper)", type: "Research Paper", url: "https://arxiv.org/abs/1706.03762" },
+          { icon: "📖", name: "Speech and Language Processing — Jurafsky (free)", type: "Free Textbook", url: "https://web.stanford.edu/~jurafsky/slp3/" },
+          { icon: "🎥", name: "Stanford CS224N — NLP with Deep Learning (free)", type: "University Course", url: "https://web.stanford.edu/class/cs224n/" },
+          { icon: "📖", name: "Lena Voita — NLP Course for You", type: "Interactive Blog", url: "https://lena-voita.github.io/nlp_course.html" },
+          { icon: "🧑‍💻", name: "HuggingFace Model Hub — 500k+ models", type: "Platform", url: "https://huggingface.co/models" },
+          { icon: "📖", name: "NLP with Transformers — Lewis Tunstall et al.", type: "Book", url: "https://www.oreilly.com/library/view/natural-language-processing/9781098136789/" },
         ]
       },
       {
@@ -321,6 +381,12 @@ const CURRICULUM = [
           { icon: "📖", name: "LangChain Docs — RAG Tutorials", type: "Documentation", url: "https://python.langchain.com/docs/tutorials/rag/" },
           { icon: "🎥", name: "Karpathy — Intro to Large Language Models", type: "YouTube", url: "https://www.youtube.com/watch?v=zjkBMFhNj_g" },
           { icon: "🧑‍💻", name: "HuggingFace PEFT / LoRA Guide", type: "Documentation", url: "https://huggingface.co/docs/peft/" },
+          { icon: "📖", name: "Prompt Engineering Guide — DAIR.AI (free)", type: "Free Guide", url: "https://www.promptingguide.ai/" },
+          { icon: "🧑‍💻", name: "OpenAI Cookbook — Practical Examples", type: "GitHub", url: "https://cookbook.openai.com/" },
+          { icon: "🧑‍💻", name: "Anthropic Cookbook — Claude Patterns", type: "GitHub", url: "https://github.com/anthropics/anthropic-cookbook" },
+          { icon: "📖", name: "AI Engineering — Chip Huyen", type: "Book", url: "https://www.oreilly.com/library/view/ai-engineering/9781098166298/" },
+          { icon: "📖", name: "Simon Willison's Blog — LLM Ecosystem", type: "Blog", url: "https://simonwillison.net/" },
+          { icon: "🧑‍💻", name: "LlamaIndex Docs — RAG Framework", type: "Documentation", url: "https://docs.llamaindex.ai/" },
         ]
       }
     ]
@@ -350,6 +416,11 @@ const CURRICULUM = [
           { icon: "📖", name: "Docker Official Get Started Guide", type: "Documentation", url: "https://docs.docker.com/get-started/" },
           { icon: "🧑‍💻", name: "FastAPI Official Documentation", type: "Documentation", url: "https://fastapi.tiangolo.com/" },
           { icon: "📖", name: "Designing ML Systems — Chip Huyen", type: "Book", url: "https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/" },
+          { icon: "🧑‍💻", name: "BentoML — Model Serving Framework", type: "Documentation", url: "https://docs.bentoml.com/" },
+          { icon: "🧑‍💻", name: "Gradio — Build ML Demos Fast", type: "Documentation", url: "https://www.gradio.app/" },
+          { icon: "🧑‍💻", name: "ONNX Runtime — Cross-platform Inference", type: "Documentation", url: "https://onnxruntime.ai/" },
+          { icon: "🧑‍💻", name: "Ray Serve — Scalable Model Serving", type: "Documentation", url: "https://docs.ray.io/en/latest/serve/index.html" },
+          { icon: "🎥", name: "Sentdex — Deploying ML Models", type: "YouTube Series", url: "https://www.youtube.com/@sentdex" },
         ]
       },
       {
@@ -371,6 +442,11 @@ const CURRICULUM = [
           { icon: "🧑‍💻", name: "Weights & Biases — Getting Started", type: "Documentation", url: "https://docs.wandb.ai/quickstart" },
           { icon: "🎥", name: "Made With ML — MLOps Course (Free)", type: "Free Course", url: "https://madewithml.com/" },
           { icon: "📖", name: "ML Engineering for Production — deeplearning.ai", type: "Coursera", url: "https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops" },
+          { icon: "🧑‍💻", name: "DVC — Data Version Control Docs", type: "Documentation", url: "https://dvc.org/doc" },
+          { icon: "🧑‍💻", name: "ZenML — MLOps Framework", type: "Documentation", url: "https://docs.zenml.io/" },
+          { icon: "🧑‍💻", name: "Prefect — Workflow Orchestration", type: "Documentation", url: "https://docs.prefect.io/" },
+          { icon: "🧑‍💻", name: "Great Expectations — Data Validation", type: "Documentation", url: "https://docs.greatexpectations.io/" },
+          { icon: "📖", name: "Evidently AI — Model Monitoring Guide", type: "Documentation", url: "https://www.evidentlyai.com/" },
         ]
       },
       {
@@ -390,8 +466,13 @@ const CURRICULUM = [
         resources: [
           { icon: "🧑‍💻", name: "AWS Machine Learning Learning Path (Free)", type: "Free Course", url: "https://aws.amazon.com/training/learn-about/machine-learning/" },
           { icon: "🧑‍💻", name: "Google Cloud ML Engineer Path", type: "Free Courses", url: "https://cloud.google.com/learn/training/machinelearning-ai" },
-          { icon: "📖", name: "SageMaker Studio Lab (Free GPU)", type: "Free Tool", url: "https://studiolab.sagemaker.aws/" },
+          { icon: "🧑‍💻", name: "SageMaker Studio Lab (Free GPU)", type: "Free Tool", url: "https://studiolab.sagemaker.aws/" },
           { icon: "🧑‍💻", name: "The Cloud Resume Challenge", type: "Hands-on Project", url: "https://cloudresumechallenge.dev/" },
+          { icon: "🧑‍💻", name: "Modal — Serverless GPU Cloud (easy)", type: "Platform", url: "https://modal.com/" },
+          { icon: "🧑‍💻", name: "Replicate — Run ML Models in the Cloud", type: "Platform", url: "https://replicate.com/" },
+          { icon: "🧑‍💻", name: "Terraform — Infrastructure as Code Tutorial", type: "Documentation", url: "https://developer.hashicorp.com/terraform/tutorials" },
+          { icon: "🎥", name: "TechWorld with Nana — Kubernetes for Beginners", type: "YouTube", url: "https://www.youtube.com/watch?v=X48VuDVv0do" },
+          { icon: "🧑‍💻", name: "Azure Machine Learning Documentation", type: "Documentation", url: "https://learn.microsoft.com/en-us/azure/machine-learning/" },
         ]
       }
     ]
